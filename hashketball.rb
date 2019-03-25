@@ -238,15 +238,25 @@ end
 long_name_steals_a_ton? 
 name_count = 0 
 long_name = nil 
-
+steal_count = 0 
+steal_name = nil
 game_hash.each do |location, team_data|
   team_data[:players].each do |player_name, data|
-    if player_name > count
+    if player_name > name_count
       long_name = player_name
     end
   end
 end
-long_name
+game_hash.each do |location, team_data|
+  team_data[:players].each do |player_name, data|
+    if player_name > steal_count
+      steal_name = player_name
+    end
+  end
+end
+if long_name == steal_name
+  return true 
+end
 end
   
   
