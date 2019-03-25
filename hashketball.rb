@@ -200,8 +200,6 @@ def big_shoe_rebounds
   rebound
 end
 
-end
-
 
 puts player_by_number(33)  
     
