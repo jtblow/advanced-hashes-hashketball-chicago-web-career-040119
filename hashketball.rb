@@ -180,7 +180,13 @@ def big_shoe_rebounds
  game_hash.each do |location, team_data|
     team_data[:players].each do |player_name, data|
       if data[:shoe] > shaq
-        shaq = data
+        shaq = data[:shoe]
+        rebound = data[:rebound]
+      end
+    end
+  end
+  rebound
+end
   
 
   
