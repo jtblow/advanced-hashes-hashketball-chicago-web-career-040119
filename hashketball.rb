@@ -140,9 +140,9 @@ end
 
 def player_by_number(num)
   game_hash.each do |location, team_data|
-    team_data[:players].each do |player_name, data|
-      if data[:number] == num 
-        return data
+    team_data[:players].each do |player_name, player_data|
+      if player_data[:number] == num 
+        return player_data
       end
     end
   end
