@@ -138,6 +138,18 @@ def shoe_size(name)
   end
 end
 
+def player_by_number(num)
+  game_hash.each do |location, team_data|
+    team_data[:players].each do |player_name, data|
+      if data[:number] == num 
+        data
+      end
+    end
+  end
+end
+      
+  
+
 def team_colors(name)
   game_hash.each do |location, team_data|
     if team_data[:team_name] == name
@@ -259,7 +271,7 @@ if long_name == steal_name
 end
 end
   
-  
+player_by_number(33)  
     
     
 
