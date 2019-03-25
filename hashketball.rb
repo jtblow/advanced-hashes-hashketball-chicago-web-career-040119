@@ -195,7 +195,12 @@ def most_points_scored
     team_data[:players].each do |player_name, data|
       if data[:points] > game_high
         game_high = data[:points]
-        player
+        player = player_name
+      end
+    end
+  end
+  player 
+end
 
   
   
