@@ -204,7 +204,7 @@ end
 def winning_team
   h = 0 
   a = 0 
-  game_hash[:home][:team_data]
+  game_hash[:home][:players]
 
   
   
