@@ -161,6 +161,7 @@ def player_numbers(name)
       end
     end
   end
+  arr
 end
   
     
