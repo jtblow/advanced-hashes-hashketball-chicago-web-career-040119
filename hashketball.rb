@@ -218,7 +218,7 @@ def winning_team
     elsif
     puts "It was a tie"
   end
-  
+end
 
   
   
