@@ -211,6 +211,8 @@ def winning_team
     a += data[:points]
   end
   if h > a
+    game_hash[:home][:team_name]
+    
 
   
   
