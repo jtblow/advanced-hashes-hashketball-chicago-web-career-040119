@@ -206,6 +206,11 @@ def winning_team
   a = 0 
   game_hash[:home][:players].each do |player_name, data|
     h += data[:points]
+  end
+  game_hash[:away][:players].each do |player_name, data|
+    a += data[:points]
+  end
+  if h > a
 
   
   
