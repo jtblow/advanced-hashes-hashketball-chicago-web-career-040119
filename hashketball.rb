@@ -228,6 +228,7 @@ long_name = nil
 game_hash.each do |location, team_data|
   team_data[:players].each do |player_name, data|
     if player_name > count
+      long_name = player_name
 
   
   
