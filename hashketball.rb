@@ -204,7 +204,8 @@ end
 def winning_team
   h = 0 
   a = 0 
-  game_hash[:home][:players]
+  game_hash[:home][:players].each do |player_name, data|
+    h 
 
   
   
