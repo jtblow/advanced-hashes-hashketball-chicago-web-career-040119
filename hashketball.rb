@@ -141,6 +141,10 @@ end
 def team_colors(name)
   game_hash.collect do |location, team_data|
     if team_data[:team_name] == name
+      team_data[:colors]
+    end
+  end
+end
 
 
 
