@@ -242,14 +242,14 @@ steal_count = 0
 steal_name = nil
 game_hash.each do |location, team_data|
   team_data[:players].each do |player_name, data|
-    if player_name > name_count
+    if player_name.length > name_count
       long_name = player_name
     end
   end
 end
 game_hash.each do |location, team_data|
   team_data[:players].each do |player_name, data|
-    if player_name > steal_count
+    if data[:steals] > steal_count
       steal_name = player_name
     end
   end
