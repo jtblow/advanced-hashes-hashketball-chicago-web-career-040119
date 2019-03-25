@@ -223,7 +223,10 @@ end
 
 
 player_with_longest_name 
-
+long_name = 0 
+player_name = nil 
+game_hash.each do |location, team_data|
+  team_data[:players].each do |
 
   
   
