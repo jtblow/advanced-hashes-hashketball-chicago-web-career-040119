@@ -121,86 +121,13 @@ def game_hash
 def num_points_scored(name)
   game_hash.each do |location, team_data|
     team_data[:players].each do |player_name, data|
-      if player_name == name
+      if player_name = name
         return data[:points]
       end
     end
   end
 end
-          
-def shoe_size(name)
-  game_hash.each do |location, team_data|
-    team_data[:players].each do |player_name, data|
-      if player_name == name
-        return data[:shoe]
-      end
-    end
-  end
-end
-
-def team_colors(name)
-  game_hash.each do |location, team_data|
-    if team_data[:team_name] == name
-       return team_data[:colors]
-    end
-  end
-end
-
-def team_names
-  game_hash.collect do |location, team_data|
-     team_data[:team_name]
-  end
-end
-
-def player_numbers(name)
-  arr = []
-  game_hash.each do |location, team_data|
-    team_data[:players].each do |player_name, data|
-      if team_data[:team_name] == name
-        arr << data[:number]
-      end
-    end
-  end
-  arr
-end
-
-def player_stats(name)
-  game_hash.each do |location, team_data|
-    team_data[:players].each do |player_name, data|
-      if player_name == name
-        return data
-      end
-    end
-  end
-end
-
-def big_shoe_rebounds
-  biggest_shoe = 0 
-  rebound = 0 
-  game_hash.each do |location, team_data|
-  team_data[:players].each do |player_name, data|
-    if data[:shoe] > biggest_shoe
-      shoe_size = data[:shoe]
-      rebound = data[:rebounds]
-    end
-  end
-end
-rebound 
-end
-
-def most_points_scored
-  game_high = 0 
-  player = nil 
-game_hash.each do |location, team_data|
-  team_data[:players].each do |player_name, data|
-    if data[:points] > game_high
-      game_high = data[:points]
-      player = player_name
-    end
-  end
-end
-player
-end
+  
 
 
 
