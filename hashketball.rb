@@ -235,9 +235,10 @@ end
 long_name
 end
 
-player_with_longest_name 
-count = 0 
+long_name_steals_a_ton? 
+name_count = 0 
 long_name = nil 
+
 game_hash.each do |location, team_data|
   team_data[:players].each do |player_name, data|
     if player_name > count
