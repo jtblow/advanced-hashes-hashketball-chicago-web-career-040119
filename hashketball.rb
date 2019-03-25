@@ -271,7 +271,7 @@ if long_name == steal_name
 end
 end
   
-player_by_number(33)  
+puts player_by_number(33)  
     
     
 
